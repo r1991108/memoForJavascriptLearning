@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <!-- using stylesheets which are served by "app.use(express.static("public"));" -->
+    <link rel="stylesheet" href="/styles/style.css">
+
+</head>
+
+<body>
+    <h1>This is the Test Page</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos eum quod aut nesciunt ea sint sunt hic neque
+        accusantium, rerum, nemo nobis repellat aperiam eaque minus expedita nisi, quae voluptates!</p>
+
+    <h1>test post request</h1>
+    <form action="/formHandling_post" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age">
+        <button type="submit">submit</button>
+    </form>
+
+    <h1>test get request</h1>
+    <form action="/formHandling_get" method="get">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age">
+        <button type="submit">submit</button>
+    </form>
+
+</body>
+<script src="./server.js"></script>
+
+</html>

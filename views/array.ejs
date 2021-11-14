@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrayHandling in EJS</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <h1>arrayHandling in EJS</h1>
+    <h3>Common Programming Languages</h3>
+    <% console.log(languages); %>
+        <% console.log(languages.length); %>
+
+
+            <table>
+                <tr>
+                    <th>name</th>
+                    <th>rating</th>
+                    <th>popularity</th>
+                    <th>trending</th>
+                </tr>
+                <% languages.forEach(lang=> { %>
+                    <tr>
+                        <td>
+                            <%= lang.name %>
+                        </td>
+                        <td>
+                            <%= lang.rating %>
+                        </td>
+                        <td>
+                            <%= lang.popularity %>
+                        </td>
+                        <td>
+                            <%= lang.trending %>
+                        </td>
+                    </tr>
+                    <% }); %>
+
+            </table>
+
+
+
+</body>
+
+</html>

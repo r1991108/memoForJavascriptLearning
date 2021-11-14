@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person</title>
+</head>
+
+<body>
+    <h1>person page test</h1>
+    <h2>Your name is:
+        <%= name %>
+    </h2>
+    <section>
+        <!-- \<\%  %> is for javascript coding  -->
+        <!-- \<\%= %> is used when getting the value of a variable  -->
+        <% for( let i=0; i<10; i++){ %>
+            <p>p tag
+                <%= i %>
+            </p>
+            <% } %>
+    </section>
+
+</body>
+
+</html>
